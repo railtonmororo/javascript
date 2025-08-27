@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+    <style>
+        body{
+            background-color: rgb(105, 105, 173);
+            color:white;
+            font: normal 20pts Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Óla, mundo!</h1>
+    <p>Já foi a primeira linha.</p>
+    <script>
+        //Number.parseInt(n) -> converte algo em número inteiro
+        //Number.paerseFloat(n) -> converte algo em número com vírgula
+        //Number(n) -> o javascript que decide se é inteiro ou float
+
+        //String(n) -> transforma algo em uma string
+        //n.toString() -> transforma algo em uma string
+
+        // window.prompt = Retorna uma STRING
+        // + -> ADIÇÃO( number + number) e + -> CONCATENAÇÃO(string + string)
+
+        //`texto ${variavel}` -> usa template string para concatenar, tem que usar entre crase(` `)
+
+        /*
+        var s = 'JavaScript' 
+        s.length -> quantos caracteres a string tem
+        s.toUpperCase() -> tudo para 'MAIÚSCULAS'
+        s.toLowerCase() -> tudo para 'minúscula'
+        */
+
+        var n1 = Number(window.prompt('Digite um número: ')) 
+        var n2 =Number( window.prompt('Digite outro número: '))
+        var s = n1 + n2
+        //window.alert('A soma dos valores é: ' + s)
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`) 
+        
+    </script>
+</body>
+</html>

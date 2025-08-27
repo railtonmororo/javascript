@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+       // var nome = window.prompt('Qual o seu nome?')
+       // document.write(`Ola, <strong>${nome}!</strong> Seu nome tem ${nome.length} letras.<br/>`) // document.write -> escreve na tela
+       // document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}<br/>`) // <br/> -> quebra de linha 
+        //document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}`)
+
+
+
+        //variavel.toFixed() -> só funciona com números
+        // string não tem .toFixed()
+        var n1 = Number(window.prompt('Digite um numero'))
+        document.write(`O número ${n1} com duas casas decimais é ` + n1.toFixed(2) + '<br/>') //variavel.toFixed(qtd de casas decimais)
+        document.write(`O número ${n1} mudando de ponto  para virgula é ` + n1.toFixed(2).replace('.', ',') + '<br/>')
+        document.write(`O número ${n1} formatado em real é ` + n1.toLocaleString('pt-BR', {style:'currency', currency: 'BRL'}) + '<br/>')
+        document.write(`O número ${n1} formatado em dolar é ` + n1.toLocaleString('pt-BR', {style:'currency', currency: 'USD'}) + '<br/>')
+        document.write(`O número ${n1} formatado em euro é ` + n1.toLocaleString('pt-BR', {style:'currency', currency: 'EUR'}) + '<br/>')
+
+
+    </script>
+</body>
+</html>

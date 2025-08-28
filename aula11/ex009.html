@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body{
+            background-color: aquamarine;
+            font-family: Arial, Helvetica, sans-serif;
+           
+        }
+
+        h1{
+            font-size: 30px;
+        }
+
+        div#res{
+            background: linear-gradient(to right, blue, transparent);
+        }
+    </style>
+</head>
+<body>
+    <h1>De qual país você é?</h1>
+    Eu nasci em: <input type="text" name="pais01" id="pais01">
+    <input type="button" value="Verificar" onclick="pesquisar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function pesquisar(){
+            var txpa = window.document.getElementById('pais01')
+            var res = window.document.querySelector('div#res')
+            res.innertext = `<p>Seu país de origem é ${txpa.value}<p>`
+            var pais = txpa.value.toLowerCase()
+            if(pais === 'brasil'){
+                res.innerHTML += `<p>Você é do país do futebol<p>`
+            }else{
+                res.innerHTML += `<p>Você é estrangeiro<p>`
+            }
+        }
+    </script>
+    
+</body>
+</html>
